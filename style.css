@@ -1,0 +1,127 @@
+:root{
+    --fonte-heading: 'Poppins', sans-serif;
+    --fonte-body:'Open Sans', sans-serif;
+    --rosa: hsl(322, 100%, 66%);
+    --ciano-claro: hsl(193, 100%, 96%);
+    --ciano-escuro: hsl(192, 100%, 9%);
+    --cinza: hsl(208, 11%, 55%);
+    --cinza-sombra: hsla(209, 16%, 71%, 0.464);
+}
+
+body{
+    background-color: white;
+    font-size: 18px;
+    font-family: var(--fonte-body);
+    color: var(--ciano-escuro);
+    line-height: 1.5rem;
+}
+header{
+    background-color: var(--ciano-claro);
+}
+.container-header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+.logo{
+    display: inline-block;
+    width: 110px;
+}
+
+header p{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0.2rem 10px 0 var(--cinza-sombra);
+}
+
+.banner{
+    background-color: var(--ciano-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    background-image: url(images/bg-hero-mobile.svg);
+}
+.heading {
+    margin: 2rem 0 2rem 0;
+    font-family: var(--fonte-heading);
+    font-size: 26px;
+    line-height: 2.5rem;
+ 
+}
+
+.botão{
+    font-size: 12px;
+    background-color: var(--rosa);
+    color: white;
+    font-weight: 700;
+    padding: 0.8rem 4rem;
+    border-radius: 30px;
+    margin: 2rem 0;
+    box-shadow: 0 0.2rem 10px 0 var(--cinza-sombra);
+    text-align: center;
+
+
+}
+.ilustração-banner{
+    display: inline-block;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.card{
+    margin: 3rem 2rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0.2rem 10px 0 var(--cinza-sombra);
+    text-align: center;
+}
+.ilustração{
+    display: inline-block;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.heading secundária{
+    font-size: 22px;
+}
+
+.descrição{
+    font-size: 16px;
+    color: var(--cinza);
+}
+
+.card-especial{
+    margin: 3rem 2rem;
+    padding: 1.5rem .5rem;
+    border-radius: 20px;
+    box-shadow: 0 0.2rem 10px 0 var(--cinza-sombra);
+    text-align: center;
+}
+
+.heading-menor{
+    font-family: var(--fonte-heading);
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+.botão-especial{
+    font-size: 12px;
+    background-color: var(--rosa);
+    color: white;
+    padding: 0.6rem;
+    font-weight: 700;
+    margin: 2rem 2rem 0 2rem;
+    border-radius: 30px;
+    box-shadow: 0 0.2rem 10px 0 var(--cinza-sombra);
+    text-align: center;
+
+}
