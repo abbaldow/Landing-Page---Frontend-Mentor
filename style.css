@@ -43,13 +43,16 @@ header p{
 
 .banner{
     background-color: var(--ciano-claro);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     padding: 2rem;
     text-align: center;
     background-image: url(images/bg-hero-mobile.svg);
+}
+
+.texto-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .heading {
     margin: 2rem 0 2rem 0;
@@ -59,14 +62,15 @@ header p{
  
 }
 
-.botão{
+.botão-principal{
     font-size: 12px;
     background-color: var(--rosa);
     color: white;
     font-weight: 700;
     padding: 0.8rem 4rem;
     border-radius: 30px;
-    margin: 2rem 0;
+    margin: 2rem;
+    width: 150px;
     box-shadow: 0 0.2rem 10px 0 var(--cinza-sombra);
     text-align: center;
 
@@ -172,12 +176,135 @@ footer div p{
 }
 svg{
     width: 20px;
-    margin: 0 0.3rem 2rem;
+    margin: 0 0.5rem 2rem;
 }
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    font-weight: 700; 
 }
 .attribution a { 
     color: var(--rosa); 
+}
+
+@media only screen and (min-width: 1440px) {
+    .container-header{
+        padding: 3rem 4rem;
+    }
+    .logo{
+        width: 200px;
+    }
+    header p{
+        padding: 0.5rem 3rem;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem 2rem;
+        background-image: url(images/bg-hero-desktop.svg);
+        padding: 0 4rem 3rem 4rem;
+    }
+
+    .texto-banner{
+        display: flex;
+        align-items: flex-start;
+        width: 50%;
+        text-align: left;
+        padding-right: 2rem;
+    }
+
+    .heading{
+        font-size: 45px;
+        line-height: 4rem;
+    }
+    .botão-principal{
+        margin: 2rem 0px;
+    }
+
+    .ilustração-banner{
+        display: inline-block;
+        width: 700px;
+        padding: 0 2rem;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 4rem 6rem;
+        padding: 4rem 8rem;
+    }
+
+    .card div{
+        text-align: left;
+        width: 450px;
+    
+    }
+
+    .ilustração{
+        width: 450px;
+    }
+
+    .card h2{
+        font-size: 30px;
+    }
+    .section-final{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .card-especial{
+        width: 750px;
+    }
+
+    .botão-especial{
+        margin: 0 10rem;
+        padding: 1rem;
+    }
+
+    .heading-menor{
+        font-size: 30px;
+        margin-bottom: 3rem;
+    }
+
+    footer{
+        padding: 4rem;
+    }
+
+    .logo-branca{
+        width: 250px;
+    }
+    .container-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 10rem;
+    }
+    .informações{
+        width: 380px;
+    }
+    .lista-itens{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content: space-between;
+        margin: 0px;
+    }
+    ul div{
+        padding: 0 5rem;
+    }
+    .rede-social{
+        margin-top: 1.5rem;
+    }
+
+    .attribution{
+        margin-top: 2rem;
+        text-align: right;
+    }
 }
