@@ -100,12 +100,17 @@ header p{
     color: var(--cinza);
 }
 
+.section-final{
+    background-image: linear-gradient(to bottom, white, white 60%, var(--ciano-escuro) 40%);
+}
 .card-especial{
-    margin: 3rem 2rem;
-    padding: 1.5rem .5rem;
+    margin: 3rem 2rem 0 2rem;
+    padding: 3rem .5rem;
     border-radius: 20px;
     box-shadow: 0 0.2rem 10px 0 var(--cinza-sombra);
     text-align: center;
+    background-color: white;
+
 }
 
 .heading-menor{
@@ -124,4 +129,46 @@ header p{
     box-shadow: 0 0.2rem 10px 0 var(--cinza-sombra);
     text-align: center;
 
+}
+
+footer{
+    padding: 3rem 1rem;
+    background: var(--ciano-escuro);
+    color: white;
+}
+footer div p{
+    font-size: 16px;
+    margin-left: 1rem;
+}
+
+.logo-branca{
+    display: inline-block;
+    width: 200px;
+}
+
+.informações{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1.5rem 0;
+
+}
+
+.icone{
+    padding-top: 0.3rem;
+}
+
+.lista-itens{
+    margin: 3rem 0;
+}
+.lista-itens li{
+    margin:1.5rem 0
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--rosa); 
 }
